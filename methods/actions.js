@@ -9,7 +9,7 @@ var functions = {
         }
         else {
             var newUser = User({
-                name: req.body.name,
+                email: req.body.email,
                 password: req.body.password
             });
             newUser.save(function (err, newUser) {
@@ -24,7 +24,7 @@ var functions = {
     },
     authenticate: function (req, res) {
         User.findOne({
-            name: req.body.name
+            email: req.body.email
         }, function (err, user) {
                 if (err) throw err
                 if (!user) {
