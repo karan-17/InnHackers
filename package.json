@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts ": {
+    " start ": " cross-env NODE_ENV = production node server",
+    " dev ": " cross-env NODE_ENV = development nodemon server"
+  },
+  "dependencies": {
+  "bcrypt": "^5.0.1",
+  "body-parser": "^1.20.0",
+  "connect-mongo": "^4.6.0",
+  "cors": "^2.8.5",
+  "cross-env": "^7.0.3",
+  "dotenv": "^16.0.2",
+  "express": "^4.18.1",
+  "jwt-simple": "^0.5.6",
+  "mongoose": "^6.6.2",
+  "morgan": "^1.10.0",
+  "nodemon": "^2.0.20",
+  "passport": "^0.6.0",
+  "passport-jwt": "^4.0.0"
+  }
+}
