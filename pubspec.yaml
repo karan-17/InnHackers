@@ -52,6 +52,7 @@ dependencies:
   barcode:
   qr:
   printing:
+  flutter_clean_calendar:
 
 dev_dependencies:
   flutter_test:

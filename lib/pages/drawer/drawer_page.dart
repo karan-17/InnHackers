@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:innhacks/pages/event.dart';
 import 'package:innhacks/pages/idcard/id_ui.dart';
 import 'package:innhacks/pages/qr/generate_qr.dart';
 import 'package:innhacks/pages/qr/scan_qr.dart';
@@ -34,7 +35,7 @@ List<ButtonsInfo> _buttonNames = [
   ButtonsInfo(title: "Read Feedbacks", icon: Icons.feedback),
   ButtonsInfo(title: "Download ID Card", icon: Icons.perm_identity_outlined),
   ButtonsInfo(title: "Volunteers", icon: Icons.list),
-  ButtonsInfo(title: "Contact Us", icon: Icons.perm_contact_cal_outlined),
+  ButtonsInfo(title: "Schedules", icon: Icons.schedule),
   ButtonsInfo(title: "About Us", icon: Icons.people_alt_sharp),
 ];
 
@@ -45,7 +46,7 @@ List<Routes> _routes = [
   Routes(route: WidgetTree()),
   Routes(route: HomePage()),
   Routes(route: WidgetTree()),
-  Routes(route: WidgetTree()),
+  Routes(route: DemoApp()),
   Routes(route: WidgetTree()),
 ];
 
