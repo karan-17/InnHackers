@@ -6,7 +6,9 @@ router.get('/', (req, res) => {
     res.send('Hello World')
 })
 
-router.get('/dashboard', actions.getinfo)
+router.get('/dashboard', (req, res) => {
+    res.send('Dashboard')
+})
 
 //@desc Adding new user
 //@route POST /adduser
