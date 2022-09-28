@@ -6,9 +6,7 @@ router.get('/', (req, res) => {
     res.send('Hello World')
 })
 
-router.get('/dashboard', (req, res) => {
-    res.send('Dashboard')
-})
+router.get('/dashboard', actions.getinfo)
 
 //@desc Adding new user
 //@route POST /adduser
@@ -20,6 +18,8 @@ router.post('/authenticate', actions.authenticate)
 
 //@desc Get info on a user
 //@route GET /getinfo
-router.get('/getinfo', actions.getinfo)
+// router.get('/getinfo', actions.getinfo)
+
+
 
 module.exports = router
