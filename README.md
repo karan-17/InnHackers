@@ -1,7 +1,7 @@
 # InnHacks- UniToG
 
 
-## A Universal, Unique and United application for the Teen of Gods(ToG)
+## A Universal, Unique and United application for the Teens of God(ToG)
 
 
 A few resources to get you started if this is your first Flutter project:
