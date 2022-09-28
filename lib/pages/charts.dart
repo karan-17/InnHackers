@@ -1023,7 +1023,7 @@ class BarChartSample2State extends State<BarChartSample2> {
                   children: <Widget>[
                     //makeTransactionsIcon(),
                     const Text(
-                      'Monthly Profits',
+                      'Weekly Attendance',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     const Text(
@@ -1046,16 +1046,8 @@ class BarChartSample2State extends State<BarChartSample2> {
                       style: TextStyle(color: Color(0xff77839a), fontSize: 16),
                     ),
                     Text(
-                      'Sales ',
+                      'Students ',
                       style: TextStyle(color: leftBarColor, fontSize: 16),
-                    ),
-                    const Text(
-                      'And ',
-                      style: TextStyle(color: Color(0xff77839a), fontSize: 16),
-                    ),
-                    Text(
-                      'Orders',
-                      style: TextStyle(color: rightBarColor, fontSize: 16),
                     ),
                   ],
                 ),
@@ -1158,11 +1150,11 @@ class BarChartSample2State extends State<BarChartSample2> {
                             reservedSize: 14,
                             getTitles: (value) {
                               if (value == 0) {
-                                return '1K';
+                                return '1';
                               } else if (value == 10) {
-                                return '5K';
+                                return '5';
                               } else if (value == 19) {
-                                return '10K';
+                                return '10';
                               } else {
                                 return '';
                               }
