@@ -6,8 +6,8 @@
 
 A few resources to get you started if this is your first Flutter project:
 
-- [GitHub Repo Link:](https://github.com/karan-17/InnHacker)
-- [Heroku: ](https://tog-admin.herokuapp.com/)
+- [GitHub Repo Link](https://github.com/karan-17/InnHacker)
+- [Heroku](https://tog-admin.herokuapp.com/)
 
 # Screenshots of the Project
 
