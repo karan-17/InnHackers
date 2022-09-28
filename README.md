@@ -1,16 +1,18 @@
-# innhacks
+# InnHacks- UniToG
 
-A new Flutter project.
 
-## Getting Started
+## A Universal, Unique and United application for the Teen of Gods(ToG)
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [GitHub Repo Link](https://github.com/karan-17/InnHacker)
+- [Heroku](https://tog-admin.herokuapp.com/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Screenshots of the Project
+
+Sign In Page            |  Sign Up Page                   | Drawer               | QR Page               | Event Planner
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![signin](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signin.jpeg) | ![signup](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signup.jpeg) | ![drawer](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/drawer.jpeg) | ![qrgenerator](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/qrgenerate.jpeg) | ![event](https://github.com/karan-17/InnHackers/blob/50ccecefc6bd78a417c629c8bb2b13fecabda5cf/assets/event.jpeg)
+
+<figure class="video_container"><iframe src="https://drive.google.com/file/d/1UdtlUEjKbhLGS4Qjv5VTb2tcR19zX9Gd/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe></figure>
