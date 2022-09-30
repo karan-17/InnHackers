@@ -1,6 +1,6 @@
-var mongoose = require('mongoose')
-var Schema = mongoose.Schema;
+const {Schema, model} = require('mongoose')
 var bcrypt = require('bcrypt')
+
 var userSchema = new Schema({
     email: {
         type: String,
@@ -9,37 +9,46 @@ var userSchema = new Schema({
     password: {
         type: String,
         require: true
-    }
-})
+    },
+    role:{
+        type: String,
+        default:'student',
+        enum:['student','volunteer','admin']
+    },
+    username: {
+        type: String,
+        require: true
+    },
+}, {timestamps: true});
 
-userSchema.pre('save', function (next) {
-    var user = this;
-    if (this.isModified('password') || this.isNew) {
-        bcrypt.genSalt(10, function (err, salt) {
-            if (err) {
-                return next(err)
-            }
-            bcrypt.hash(user.password, salt, function (err, hash) {
-                if (err) {
-                    return next(err)
-                }
-                user.password = hash;
-                next()
-            })
-        })
-    }
-    else {
-        return next()
-    }
-})
+// userSchema.pre('save', function (next) {
+//     var user = this;
+//     if (this.isModified('password') || this.isNew) {
+//         bcrypt.genSalt(10, function (err, salt) {
+//             if (err) {
+//                 return next(err)
+//             }
+//             bcrypt.hash(user.password, 10, function (err, hash) {
+//                 if (err) {
+//                     return next(err)
+//                 }
+//                 user.password = hash;
+//                 next()
+//             })
+//         })
+//     }
+//     else {
+//         return next()
+//     }
+// })
 
-userSchema.methods.comparePassword = function (passw, cb) {
-    bcrypt.compare(passw, this.password, function (err, isMatch) {
-        if(err) {
-            return cb(err)
-        }
-        cb(null, isMatch)
-    })
-}
+// userSchema.methods.comparePassword = function (passw, cb) {
+//     bcrypt.compare(passw, this.password, function (err, isMatch) {
+//         if(err) {
+//             return cb(err)
+//         }
+//         cb(null, isMatch)
+//     })
+// }
 
-module.exports = mongoose.model('User', userSchema)
+module.exports = model('user', userSchema)

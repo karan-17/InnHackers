@@ -9,7 +9,15 @@ const newSchema=new Schema({
     password:{
         type:String,
         required:true
-    }
+    },role:{
+        type: String,
+        default:'student',
+        enum:['student','volunteer','admin']
+    },
+    username: {
+        type: String,
+        require: true
+    },
 });
 
-module.exports = User= mongoose.model('User', newSchema);
+module.exports = User= mongoose.model('user', newSchema);
