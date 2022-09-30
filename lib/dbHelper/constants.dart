@@ -1,8 +1,10 @@
 // final username= "togAdmin"
-// password: admin@tog
+// password: togAdmin
 import 'package:flutter/material.dart';
 const MONGO_CONN_URL = "mongodb+srv://togAdmin:togAdmin@cluster0.51un51k.mongodb.net/MyDb?retryWrites=true&w=majority";
-const USER_COLLECTION = "Student";
+const STUDENT_COLLECTION = "Student";
+const VOLUNTEER_COLLECTION = "Volunteer";
+
 
 class Constants {
   static const double kPadding = 10.0;

@@ -39,7 +39,6 @@ dependencies:
   mongo_dart: ^0.7.4+1
   google_fonts: ^2.1.0
   http: ^0.13.3
-  flutter_svg: ^0.22.0
   get: ^4.6.5
   dio: ^4.0.0
   fluttertoast: ^8.0.8
@@ -52,7 +51,24 @@ dependencies:
   barcode:
   qr:
   printing:
-  flutter_clean_calendar:
+  faker: ^2.0.0
+  intl: ^0.17.0
+  sqflite: ^2.0.1
+  uuid: ^3.0.5
+  hexcolor: ^2.0.5
+  shared_preferences: ^2.0.11
+  date_picker_timeline: ^1.2.3
+  flutter_staggered_animations: ^1.0.0
+  flutter_local_notifications: ^9.2.0
+  flutter_svg: ^1.0.3
+  syncfusion_flutter_calendar: ^19.4.54
+  firebase_core: ^1.10.6
+  firebase_messaging: ^11.2.5
+  gallery_saver: ^2.3.2
+  hive_flutter: ^1.1.0
+  hooks_riverpod: ^1.0.3
+  permission_handler: ^10.0.2
+  qr_code_scanner: ^1.0.0
 
 dev_dependencies:
   flutter_test:

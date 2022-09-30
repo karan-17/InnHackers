@@ -11,18 +11,20 @@ class Todo {
 }
 
 class PanelLeftPage extends StatefulWidget {
+  const PanelLeftPage({super.key});
+
   @override
   _PanelLeftPageState createState() => _PanelLeftPageState();
 }
 
 class _PanelLeftPageState extends State<PanelLeftPage> {
-  List<Todo> _todos = [
-    Todo(name: "Purchase Paper", enable: true),
-    Todo(name: "Refill the inventory of speakers", enable: true),
-    Todo(name: "Hire someone", enable: true),
-    Todo(name: "Maketing Strategy", enable: true),
-    Todo(name: "Selling furniture", enable: true),
-    Todo(name: "Finish the disclosure", enable: true),
+  final List<Todo> _todos = [
+    Todo(name: "Student Attendance Portal Activate", enable: true),
+    Todo(name: "Volunteer Attendance Portal Activate", enable: true),
+    Todo(name: "Send data to Head Branch", enable: true),
+    Todo(name: "Revenue Strategy Analysis", enable: true),
+    // Todo(name: "Selling furniture", enable: true),
+    // Todo(name: "Finish the disclosure", enable: true),
   ];
 
   @override
@@ -35,7 +37,7 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
               color: Constants.purpleLight,
               width: 50,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Constants.purpleDark,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50),
@@ -59,20 +61,20 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                     ),
                     child: Container(
                       width: double.infinity,
-                      child: ListTile(
-                        //leading: Icon(Icons.shopping_basket),
+                      child: const ListTile(
+                        leading: Icon(Icons.arrow_upward_sharp,
+                            color: Colors.green, size: 40),
                         title: Text(
-                          "Products Sold",
+                          "Monthly Revenue",
                           style: TextStyle(color: Colors.white),
                         ),
                         subtitle: Text(
-                          "18% of Products Sold",
+                          "+18% than last month",
                           style: TextStyle(color: Colors.white),
                         ),
-                        trailing: Chip(
-                          label: Text(
-                            "4,500",
-                            style: TextStyle(color: Colors.white),
+                        trailing: Chip(                          label: Text(
+                            "Rs. 4.5L",
+                            style: TextStyle(color: Colors.green),
                           ),
                         ),
                       ),
@@ -98,7 +100,7 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                         (index) => CheckboxListTile(
                           title: Text(
                             _todos[index].name,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                           value: _todos[index].enable,
                           onChanged: (newValue) {

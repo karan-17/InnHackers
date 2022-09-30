@@ -85,101 +85,179 @@ class PieChart2State extends State {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-          left: Constants.kPadding / 2,
-          bottom: Constants.kPadding,
-          right: Constants.kPadding / 2),
-      child: Card(
-        color: Constants.purpleLight,
-        elevation: 3,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Row(
-          children: <Widget>[
-            const SizedBox(
-              height: 18,
-            ),
-            Expanded(
-              child: AspectRatio(
-                aspectRatio: 1,
-                child: PieChart(
-                  PieChartData(
-                      pieTouchData:
-                      PieTouchData(touchCallback: (pieTouchResponse) {
-                        setState(() {
-                          final desiredTouch = pieTouchResponse.touchInput
-                          is! PointerExitEvent &&
-                              pieTouchResponse.touchInput is! PointerUpEvent;
-                          if (desiredTouch &&
-                              pieTouchResponse.touchedSection != null) {
-                            touchedIndex = pieTouchResponse
-                                .touchedSection!.touchedSectionIndex;
-                          } else {
-                            touchedIndex = -1;
-                          }
-                        });
-                      }),
-                      borderData: FlBorderData(
-                        show: false,
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.only(
+            left: Constants.kPadding / 2,
+            bottom: Constants.kPadding,
+            right: Constants.kPadding / 2),
+        child: Column(
+          children: [
+            const Text('Classwise Strength of Students', style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),),
+            Card(
+                color: Constants.purpleLight,
+                elevation: 3,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 18,
+                    ),
+                    Expanded(
+                      child: AspectRatio(
+                        aspectRatio: 1,
+                        child: PieChart(
+                          PieChartData(
+                              pieTouchData:
+                              PieTouchData(touchCallback: (pieTouchResponse) {
+                                setState(() {
+                                  final desiredTouch = pieTouchResponse.touchInput
+                                  is! PointerExitEvent &&
+                                      pieTouchResponse.touchInput is! PointerUpEvent;
+                                  if (desiredTouch &&
+                                      pieTouchResponse.touchedSection != null) {
+                                    touchedIndex = pieTouchResponse
+                                        .touchedSection!.touchedSectionIndex;
+                                  } else {
+                                    touchedIndex = -1;
+                                  }
+                                });
+                              }),
+                              borderData: FlBorderData(
+                                show: false,
+                              ),
+                              sectionsSpace: 0,
+                              centerSpaceRadius: 40,
+                              sections: showingSections()),
+                        ),
                       ),
-                      sectionsSpace: 0,
-                      centerSpaceRadius: 40,
-                      sections: showingSections()),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0,  bottom: 10.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:const  <Widget>[
+                          Indicator(
+                            color: Color(0xff0293ee),
+                            text: 'First',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Color(0xfff8b250),
+                            text: 'Second',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Color(0xffff5182),
+                            text: 'Third',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Color(0xff13d38e),
+                            text: 'Fourth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Color(0xffb06ab3),
+                            text: 'Fifth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.brown,
+                            text: 'Sixth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.blue,
+                            text: 'Seventh',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.deepOrange,
+                            text: 'Eighth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.teal,
+                            text: 'Ninth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.yellowAccent,
+                            text: 'Tenth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.black54,
+                            text: 'Eleventh',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Indicator(
+                            color: Colors.white54,
+                            text: 'Twelfth',
+                            isSquare: true,
+                          ),
+                          SizedBox(
+                            height: 18,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 28,
+                    ),
+                  ],
                 ),
               ),
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
-                Indicator(
-                  color: Color(0xff0293ee),
-                  text: 'First',
-                  isSquare: true,
-                ),
-                SizedBox(
-                  height: 4,
-                ),
-                Indicator(
-                  color: Color(0xfff8b250),
-                  text: 'Second',
-                  isSquare: true,
-                ),
-                SizedBox(
-                  height: 4,
-                ),
-                Indicator(
-                  color: Color(0xffff5182),
-                  text: 'Third',
-                  isSquare: true,
-                ),
-                SizedBox(
-                  height: 4,
-                ),
-                Indicator(
-                  color: Color(0xff13d38e),
-                  text: 'Fourth',
-                  isSquare: true,
-                ),
-                SizedBox(
-                  height: 18,
-                ),
-              ],
-            ),
-            const SizedBox(
-              width: 28,
-            ),
           ],
         ),
-      ),
+        ),
     );
   }
 
   List<PieChartSectionData> showingSections() {
-    return List.generate(4, (i) {
+    return List.generate(12, (i) {
       final isTouched = i == touchedIndex;
       final fontSize = isTouched ? 25.0 : 16.0;
       final radius = isTouched ? 60.0 : 50.0;
@@ -187,8 +265,8 @@ class PieChart2State extends State {
         case 0:
           return PieChartSectionData(
             color: const Color(0xff0293ee),
-            value: 40,
-            title: '40%',
+            value: 15,
+            title: '15%',
             radius: radius,
             titleStyle: TextStyle(
                 fontSize: fontSize,
@@ -198,8 +276,8 @@ class PieChart2State extends State {
         case 1:
           return PieChartSectionData(
             color: const Color(0xfff8b250),
-            value: 30,
-            title: '30%',
+            value: 14,
+            title: '14%',
             radius: radius,
             titleStyle: TextStyle(
                 fontSize: fontSize,
@@ -209,8 +287,8 @@ class PieChart2State extends State {
         case 2:
           return PieChartSectionData(
             color: const Color(0xffff5182),
-            value: 15,
-            title: '15%',
+            value: 11,
+            title: '11%',
             radius: radius,
             titleStyle: TextStyle(
                 fontSize: fontSize,
@@ -220,8 +298,107 @@ class PieChart2State extends State {
         case 3:
           return PieChartSectionData(
             color: const Color(0xff13d38e),
-            value: 15,
-            title: '15%',
+            value: 10,
+            title: '10%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 4:
+          return PieChartSectionData(
+            color: const Color(0xff13d38e),
+            value: 9,
+            title: '9%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 5:
+          return PieChartSectionData(
+            color: const Color(0xffb06ab3),
+            value: 5,
+            title: '5%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 6:
+          return PieChartSectionData(
+            color: Colors.brown,
+            value: 7,
+            title: '7%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 7:
+          return PieChartSectionData(
+            color: Colors.blue,
+            value: 10,
+            title: '10%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 8:
+          return PieChartSectionData(
+            color: Colors.deepOrange,
+            value: 9,
+            title: '9%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 9:
+          return PieChartSectionData(
+            color: Colors.teal,
+            value: 3,
+            title: '3%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 10:
+          return PieChartSectionData(
+            color: Colors.yellowAccent,
+            value: 4,
+            title: '4%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 11:
+          return PieChartSectionData(
+            color: Colors.black54,
+            value: 2,
+            title: '2%',
+            radius: radius,
+            titleStyle: TextStyle(
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffffffff)),
+          );
+        case 12:
+          return PieChartSectionData(
+            color: Colors.white54,
+            value: 1,
+            title: '1%',
             radius: radius,
             titleStyle: TextStyle(
                 fontSize: fontSize,
@@ -587,7 +764,7 @@ class LineChartSample1State extends State<LineChartSample1> {
                     height: 37,
                   ),
                   const Text(
-                    'Unfold Shop 2021',
+                    'Revenue Plot',
                     style: TextStyle(
                       color: Color(0xff827daa),
                       fontSize: 16,
@@ -598,7 +775,7 @@ class LineChartSample1State extends State<LineChartSample1> {
                     height: 4,
                   ),
                   const Text(
-                    'Monthly Sales',
+                    'Monthly Revenue Generated',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -1027,7 +1204,7 @@ class BarChartSample2State extends State<BarChartSample2> {
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     const Text(
-                      r'$345,462',
+                      'Week:35',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,

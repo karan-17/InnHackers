@@ -17,7 +17,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  var email, password;
+  var email, password, role, username, name;
   var token;
     final _formKey = GlobalKey<FormState>();
   @override
@@ -52,8 +52,39 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontSize: 50,
                             color: Colors.blue),
                       ),
-                      const SizedBox(
-                        height: 25,
+
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: TextFormField(
+                          controller: TextEditingController(text: name),
+                          onChanged: (value) {
+                            name = value;
+                          },
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return 'Enter something';
+                            }
+
+                          },
+                          decoration: InputDecoration(
+                              icon: const Icon(
+                                Icons.verified_user_rounded,
+                                color: Colors.blue,
+                              ),
+                              hintText: 'Enter Name',
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              errorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red)),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red))),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -79,6 +110,71 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: Colors.blue,
                               ),
                               hintText: 'Enter Email',
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              errorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red)),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red))),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: TextFormField(
+                          controller: TextEditingController(text: role),
+                          onChanged: (value) {
+                            role = value;
+                          },
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return 'Enter something';
+                            }
+
+                          },
+                          decoration: InputDecoration(
+                              icon: const Icon(
+                                Icons.verified_user_rounded,
+                                color: Colors.blue,
+                              ),
+                              hintText: 'Enter Role(admin/volunteer/student',
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.blue)),
+                              errorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red)),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: const BorderSide(color: Colors.red))),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: TextFormField(
+                          controller: TextEditingController(text: username),
+                          onChanged: (value) {
+                            username = value;
+                          },
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return 'Enter something';
+                            }
+                          },
+                          decoration: InputDecoration(
+                              icon: const Icon(
+                                Icons.verified_user_rounded,
+                                color: Colors.blue,
+                              ),
+                              hintText: 'Enter Username',
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(16),
                                   borderSide: const BorderSide(color: Colors.blue)),
@@ -139,13 +235,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                       borderRadius: BorderRadius.circular(16))),
                               onPressed: (){
                                 if (_formKey.currentState!.validate()){
-                                  AuthService().login(email, password).then((value){
+                                  AuthService().login(name, email, password, role, username).then((value){
                                     if (value.data['success']) {
                                       token = value.data['token'];
                                       Get.snackbar('Success', 'Login Successful');
-                                      // AuthService().getinfo(token).then((value){
                                         Get.to(WidgetTree());
-                                      // });
                                     } else {
                                       Get.snackbar('Error', value.data['message']);
                                     }

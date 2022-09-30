@@ -1,16 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:innhacks/pages/event.dart';
+import 'package:innhacks/layout/todo_layout.dart';
 import 'package:innhacks/pages/idcard/id_ui.dart';
 import 'package:innhacks/pages/qr/generate_qr.dart';
 import 'package:innhacks/pages/qr/scan_qr.dart';
 import 'package:innhacks/widget_tree.dart';
-
 import '../../dbHelper/constants.dart';
-import '../../dbHelper/constants.dart';
+import '../../layout/todo_layoutcontroller.dart';
 import '../../responsive_layout.dart';
 
+TodoLayoutController todoController = Get.find<TodoLayoutController>();
 class ButtonsInfo {
   String title;
   IconData icon;
@@ -46,13 +46,13 @@ List<Routes> _routes = [
   Routes(route: WidgetTree()),
   Routes(route: HomePage()),
   Routes(route: WidgetTree()),
-  Routes(route: DemoApp()),
+  Routes(route: TodoLayout(), controller: TodoLayoutController()),
   Routes(route: WidgetTree()),
 ];
 
 class Routes {
   Widget route;
-  Routes({required this.route});
+  Routes({required this.route, controller});
 }
 
 class DrawerPage extends StatefulWidget {

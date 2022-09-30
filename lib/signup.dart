@@ -19,7 +19,7 @@ class Signup extends StatefulWidget {
 
 class _SignupState extends State<Signup> {
   final _formKey = GlobalKey<FormState>();
-  var email, password;
+  var email, password, username, role, name;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +56,40 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(
                           height: 25,
+                        ),
+
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: TextFormField(
+                            controller: TextEditingController(text: name),
+                            onChanged: (value) {
+                              name = value;
+                            },
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Enter something';
+                              }
+
+                            },
+                            decoration: InputDecoration(
+                                icon: const Icon(
+                                  Icons.verified_user_rounded,
+                                  color: Colors.blue,
+                                ),
+                                hintText: 'Enter Name',
+                                enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                errorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red)),
+                                focusedErrorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red))),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -129,6 +163,71 @@ class _SignupState extends State<Signup> {
                           ),
                         ),
                         Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: TextFormField(
+                            controller: TextEditingController(text: role),
+                            onChanged: (value) {
+                              role = value;
+                            },
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Enter something';
+                              }
+
+                            },
+                            decoration: InputDecoration(
+                                icon: const Icon(
+                                  Icons.verified_user_rounded,
+                                  color: Colors.blue,
+                                ),
+                                hintText: 'Enter Role(admin/volunteer/student',
+                                enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                errorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red)),
+                                focusedErrorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red))),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: TextFormField(
+                            controller: TextEditingController(text: username),
+                            onChanged: (value) {
+                              username = value;
+                            },
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Enter something';
+                              }
+                            },
+                            decoration: InputDecoration(
+                                icon: const Icon(
+                                  Icons.verified_user_rounded,
+                                  color: Colors.blue,
+                                ),
+                                hintText: 'Enter Username',
+                                enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.blue)),
+                                errorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red)),
+                                focusedErrorBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(16),
+                                    borderSide: const BorderSide(color: Colors.red))),
+                          ),
+                        ),
+                        Padding(
                           padding: const EdgeInsets.fromLTRB(55, 16, 16, 0),
                           child: Container(
                             height: 50,
@@ -139,13 +238,20 @@ class _SignupState extends State<Signup> {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(16))),
                                 onPressed: ()  {
-                                  AuthService().addUser(email, password).then((value){
-                                    Fluttertoast.showToast(msg: "User added",
-                                    toastLength: Toast.LENGTH_SHORT,
-                                    gravity: ToastGravity.BOTTOM,
-                                    backgroundColor: Colors.green,
-                                    textColor: Colors.white,
-                                    fontSize: 16.0);
+                                  AuthService().addUser(name,email, password, username, role).then((value){
+                                    if(value == true){
+                                      Fluttertoast.showToast(msg: "User added",
+                                          toastLength: Toast.LENGTH_SHORT,
+                                          gravity: ToastGravity.BOTTOM,
+                                          backgroundColor: Colors.green,
+                                          textColor: Colors.white,
+                                          fontSize: 16.0);
+                                      Get.to(Signin());
+                                    }
+                                    else{
+                                      Fluttertoast.showToast(msg: 'User already exists');
+                                    }
+
                                   });
                                 },
                                 child: const Text(

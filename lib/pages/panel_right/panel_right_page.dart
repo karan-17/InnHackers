@@ -3,6 +3,7 @@ import '../../dbHelper/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../charts.dart';
+import '../panel_left/panel_left_page.dart';
 
 class Product {
   String name;
@@ -28,6 +29,14 @@ class _PanelRightPageState extends State<PanelRightPage> {
     Product(name: "Facial Cleanser", enable: true),
     Product(name: "Back Cushion", enable: true),
   ];
+  final List<Todo> _todos = [
+  Todo(name: "Student Attendance Portal Activate", enable: true),
+  Todo(name: "Volunteer Attendance Portal Activate", enable: true),
+  Todo(name: "Send data to Head Branch", enable: true),
+  Todo(name: "Revenue Strategy Analysis", enable: true),
+  // Todo(name: "Selling furniture", enable: true),
+  // Todo(name: "Finish the disclosure", enable: true),
+];
 
   @override
   Widget build(BuildContext context) {
@@ -48,20 +57,20 @@ class _PanelRightPageState extends State<PanelRightPage> {
                 ),
                 child: Container(
                   width: double.infinity,
-                  child: ListTile(
-                    //leading: Icon(Icons.monetization_on),
+                  child: const ListTile(
+                    leading: Icon(Icons.arrow_upward_sharp, color: Colors.green, size: 40,),
                     title: Text(
-                      "Net Revenue",
+                      "Gross Revenue",
                       style: TextStyle(color: Colors.white),
                     ),
                     subtitle: Text(
-                      "7% of Sales Avg.",
+                      "75% of Avg. Revenue",
                       style: TextStyle(color: Colors.white),
                     ),
                     trailing: Chip(
                       label: Text(
-                        r"$46,450",
-                        style: TextStyle(color: Colors.white),
+                        "Rs. 36.5L",
+                        style: TextStyle(color: Colors.green),
                       ),
                     ),
                   ),
@@ -82,16 +91,16 @@ class _PanelRightPageState extends State<PanelRightPage> {
                     borderRadius: BorderRadius.circular(20)),
                 child: Column(
                   children: List.generate(
-                    _products.length,
+                    _todos.length,
                     (index) => SwitchListTile.adaptive(
                       title: Text(
-                        _products[index].name,
+                        _todos[index].name,
                         style: TextStyle(color: Colors.white),
                       ),
-                      value: _products[index].enable,
+                      value: _todos[index].enable,
                       onChanged: (newValue) {
                         setState(() {
-                          _products[index].enable = newValue;
+                          _todos[index].enable = newValue;
                         });
                       },
                     ),
