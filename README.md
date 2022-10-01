@@ -15,10 +15,13 @@ Sign In Page            |  Sign Up Page                   | Drawer              
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 ![signin](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signin.jpeg) | ![signup](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signup.jpeg) | ![drawer](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/drawer.jpeg) | ![qrgenerator](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/qrgenerate.jpeg) | ![event](https://github.com/karan-17/InnHackers/blob/50ccecefc6bd78a417c629c8bb2b13fecabda5cf/assets/event.jpeg)
 
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 Admin Panel            |  Admin Panel                   | Admin Panel               | Chatbot               | ID Card
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 ![Charts](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart1.jpeg) | ![Chart2](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart2.jpeg) | ![Chart3](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chart3.jpeg) | ![chatbot](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chatbot.jpeg) | ![IdCard](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/id_card.jpeg)
+
+Events Page 1            |  Events Page 2                   | Events Page 3               | Events Page 4    | ID Card
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![Event1](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart1.jpeg) | ![Event2](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart2.jpeg) | ![Event3](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chart3.jpeg) | ![Event4](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chatbot.jpeg) | ![Event5](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/id_card.jpeg)
 
 
 
