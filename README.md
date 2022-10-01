@@ -14,6 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 Sign In Page            |  Sign Up Page                   | Drawer               | QR Page               | Event Planner
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 ![signin](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signin.jpeg) | ![signup](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/signup.jpeg) | ![drawer](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/drawer.jpeg) | ![qrgenerator](https://github.com/karan-17/InnHackers/blob/9c6e7e0391695702d2cfbdec76e3508127c3431a/assets/qrgenerate.jpeg) | ![event](https://github.com/karan-17/InnHackers/blob/50ccecefc6bd78a417c629c8bb2b13fecabda5cf/assets/event.jpeg)
+
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 Admin Panel            |  Admin Panel                   | Admin Panel               | Chatbot               | ID Card
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
