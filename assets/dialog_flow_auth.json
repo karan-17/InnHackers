@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kritika-krma",
+  "private_key_id": "1b0f5e3f69917cd0862636ccf9e1749e4c5dce62",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnyBBJymDmQ6as\n04a6i7CnNu5zBYWjZ7+5s3ZliVDa30if8+AjTq/JyiHZwDj/qHYFRlbS9vXhkrAt\nWWt9jb6HObFgdAONxuC5Cy77lXz0DpdZnNqtcr4pXUj5mnV5aNRxJbN9zrtnt7MI\n2RFgfeR/6IoKAw4l4sKUbIpKAIGt3VWXUCcVijJxSyB43/OggeBwwXyRRQMNIvAT\nhf8q7zpsfoOOmhETG+U0+v3NkstS9JskY6qWdNdWAi5RNF+VJycijdWfkt/pl1ny\n4IMfM9yFHspjJz6KSs9P+SzY+Tkjeg2oDUBwfzsvw5RYncc/xcd1x+r5PpuLJ+js\ngrdrTvTRAgMBAAECggEAFX/vhmUmkZstqovYgeMQmfzSBW85try+tr8mdtBnygQ+\nvDB2ElAs+oCqYcreAvTFWtuumI4I6ATyCn2g5o/ZUF62OhPjuLE5brzeImL/hg6w\nmk0dQIipkYdgqIuAbjRetLkODRsGrL2/dWzLaz/2neVgevP1RimOoZJfDiiOdYbo\nKNVHFW+wH+VV7uRmYT/nqsZxAw2fWHXhc9DxfbPNrDh/Cv99dyg7DTI5Syb/zaoO\nXxsNkb/M9H6fBpcaXGFHa2MBtr9nGoQNbUWZ7GgDqxvIriCzDRsIBTxXdKrZ6GWI\nnQr25IrhXZ5XFt0UMQMmwKLOs+9o3dD1gdaiG0KB+QKBgQDRLcprNFMAV4ohOshl\n9fzxBol5U6HFgNQNp9Zdf5sKpqKvrevqc8J3NtJI/kKKg5DqyLdyE7I4bMclSeLU\nEdG8Er1iGnyFYc8M0i+1M3wVE4xrKkt/7lAXTn7PZBJICaeHFGvgSmBslYElKjER\n1Ph6A5mMcDQkTXVSGEmdkop3/wKBgQDNVibu04kWby9aMr30SLg9zDB1kbERWDR9\nCryT3v1EUWgiilW8F/N8lNSOmkNrxYRdtmi1tluBFtjFcLnzyDy7lCkQRfPZ1O5o\nR0/z14osbnqpix8jVSIhSZc+BycAHyS9PxUIILOCEuwFyznzuPtHWxaNJwCvx+o2\nLBJzGwUTLwKBgDqSdt6j7SXoXT5Gxnx+b9BRw0bc2yyBkV8tgwH1TEWkOWO18Jxa\nw7Y7/JAB2kIM6xRDFdL0nu/bzbusP76gKrleCfehcQKsS5zMch1sCC+ipKwRUMjG\nw1hzW2DZJaFUSruxRS+tw+hDyMDOWqUinF0WCvXfKUqNAe/16w8bTHijAoGBAIqO\niuD3bvbredl0igdQFrrkkQKUmBYrHegOmadyfhZelFVSYX3174BucWv0nnAXrTUL\nRGbxsZdPEmFQqrncsVamKHtpqJ2h+Gn3TPUuyXcn6a+ESDOwW8J4hQz/CIsleMYW\nzhtY7ahlGkzikK1scmr5BSOkYOs8jEeXv69aWTdTAoGBAIeqZ+BOW6zFgslxQ1zo\nKMSGg11yEm7jWQMcJNQMEXpKN6kXnMQ00m8AHdoXJ4rbLpLaVPu/2eXcfESF+46L\nYAaVqjjpmXdOzmh/kBmZCXLgrFokvCKIxsEHJrwAvJvR1SXqShZz3HJRhzzFHeR8\nH3KgyGgX5pA1wNzn8t29cXYh\n-----END PRIVATE KEY-----\n",
+  "client_email": "unitog@kritika-krma.iam.gserviceaccount.com",
+  "client_id": "110999191252813568491",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/unitog%40kritika-krma.iam.gserviceaccount.com"
+}

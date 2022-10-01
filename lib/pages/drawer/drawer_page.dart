@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:innhacks/layout/todo_layout.dart';
+import 'package:innhacks/pages/chatbot/chatHome.dart';
 import 'package:innhacks/pages/idcard/id_ui.dart';
 import 'package:innhacks/pages/qr/generate_qr.dart';
 import 'package:innhacks/pages/qr/scan_qr.dart';
@@ -36,7 +37,7 @@ List<ButtonsInfo> _buttonNames = [
   ButtonsInfo(title: "Download ID Card", icon: Icons.perm_identity_outlined),
   ButtonsInfo(title: "Volunteers", icon: Icons.list),
   ButtonsInfo(title: "Schedules", icon: Icons.schedule),
-  ButtonsInfo(title: "About Us", icon: Icons.people_alt_sharp),
+  ButtonsInfo(title: "Chat with Us", icon: Icons.people_alt_sharp),
 ];
 
 List<Routes> _routes = [
@@ -47,7 +48,7 @@ List<Routes> _routes = [
   Routes(route: HomePage()),
   Routes(route: WidgetTree()),
   Routes(route: TodoLayout(), controller: TodoLayoutController()),
-  Routes(route: WidgetTree()),
+  Routes(route: ChatHome()),
 ];
 
 class Routes {
