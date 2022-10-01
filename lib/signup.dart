@@ -238,7 +238,7 @@ class _SignupState extends State<Signup> {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(16))),
                                 onPressed: ()  {
-                                  AuthService().addUser(name,email, password, username, role).then((value){
+                                  AuthService().addUser(name,email, password, role, username).then((value){
                                     if(value == true){
                                       Fluttertoast.showToast(msg: "User added",
                                           toastLength: Toast.LENGTH_SHORT,
