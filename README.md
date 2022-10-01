@@ -21,9 +21,7 @@ Admin Panel            |  Admin Panel                   | Admin Panel           
 
 Events Page 1            |  Events Page 2                   | Events Page 3               | Events Page 4    | Event Page 5
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-![Event1](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event2.jpeg) | ![Event2](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event3.jpeg) | ![Event3](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event4.jpeg) | ![Event4](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/event5.jpeg) | ![Event5](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/event6.jpeg)
+![Event1](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event2.jpeg) | ![Event2](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event3.jpeg) | ![Event3](https://github.com/karan-17/InnHackers/blob/4d95a0ef3d88f55ce9caf9862d1dcd8d8a65456c/assets/event4.jpeg) | ![Event4](https://github.com/karan-17/InnHackers/blob/25ab133815d204104a83d7f8af16758eb4a343f9/assets/event4.jpeg) | ![Event5](https://github.com/karan-17/InnHackers/blob/25ab133815d204104a83d7f8af16758eb4a343f9/assets/event5.jpeg)
 
 
-
-
-<figure class="video_container"><iframe src="(https://drive.google.com/file/d/19VUWf8TJ36ggIwGn5t_9O159LIFs8nv4/view?usp=sharing)" frameborder="0" allowfullscreen="true"> </iframe></figure>
+- [Video Link](https://drive.google.com/file/d/19VUWf8TJ36ggIwGn5t_9O159LIFs8nv4/view?usp=sharing)
