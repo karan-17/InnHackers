@@ -18,7 +18,7 @@ Sign In Page            |  Sign Up Page                   | Drawer              
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 Admin Panel            |  Admin Panel                   | Admin Panel               | Chatbot               | ID Card
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-![Charts](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart1.jpeg) | ![Chart2](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart2.jpeg) | ![Chart3] (https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart3.jpeg) | ![chatbot] (https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chatbot.jpeg) | ![IdCard] (https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/id_card.jpeg)
+![Charts](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart1.jpeg) | ![Chart2](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/chart2.jpeg) | ![Chart3](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chart3.jpeg) | ![chatbot](https://github.com/karan-17/InnHackers/blob/42d2f59049d02387b751d5ebc86e17ad8be64ed4/assets/chatbot.jpeg) | ![IdCard](https://github.com/karan-17/InnHackers/blob/df93d36c2463f3ffee17e1a42ac65aa4be52debe/assets/id_card.jpeg)
 
 
 
